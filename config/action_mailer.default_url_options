@@ -1,0 +1,2 @@
+# Cloud9であれば直接PORTを指定して下記のような記述も可能です。
+config.action_mailer.default_url_options = { host: "localhost", port: 8080 }
