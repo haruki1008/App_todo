@@ -51,8 +51,8 @@ class TodosController < ApplicationController
       @todo = @goal.todos.find_by(id: params[:id])
     end
 
-   
     def todo_params
-      params.require(:todo).permit(:content, :goal_id, :position, :done)
+    params.require(:todo).permit(:content, :goal_id, :position, :done, tag_ids: [])
     end
+  
 end
