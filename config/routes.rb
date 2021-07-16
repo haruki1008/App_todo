@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
  
  
+  resources :tags
    resources :goals do
    resources :todos do
           member do
